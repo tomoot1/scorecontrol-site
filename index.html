@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScoreControl - App Support</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #333; line-height: 1.6; background: #f5f5f5; }
+  header { background: linear-gradient(135deg, #7b1fa2, #9c27b0); color: white; padding: 2rem 1rem; text-align: center; }
+  header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
+  header p { opacity: 0.9; font-size: 1rem; }
+  nav { background: white; border-bottom: 1px solid #ddd; padding: 0.5rem 1rem; position: sticky; top: 0; z-index: 10; display: flex; flex-wrap: wrap; gap: 0.3rem; justify-content: center; }
+  nav a { text-decoration: none; color: #7b1fa2; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500; transition: background 0.2s; }
+  nav a:hover, nav a.active { background: #f3e5f5; }
+  main { max-width: 700px; margin: 1.5rem auto; padding: 0 1rem; }
+  section { background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  section h2 { color: #7b1fa2; font-size: 1.3rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #f3e5f5; }
+  section h3 { font-size: 1rem; font-weight: 600; margin-top: 1rem; margin-bottom: 0.3rem; }
+  section p { margin-bottom: 0.8rem; }
+  section ul { margin-left: 1.2rem; margin-bottom: 0.8rem; }
+  section li { margin-bottom: 0.3rem; }
+  .step-list { margin-left: 1.2rem; margin-bottom: 0.8rem; }
+  footer { text-align: center; padding: 2rem 1rem; color: #999; font-size: 0.85rem; }
+  footer a { color: #7b1fa2; text-decoration: none; }
+  @media (max-width: 480px) { header h1 { font-size: 1.4rem; } nav a { font-size: 0.8rem; padding: 0.3rem 0.5rem; } }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ScoreControl</h1>
+  <p>Synced Scoreboards &mdash; WiFi &amp; Bluetooth Networked Live Updates</p>
+</header>
+
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#quickstart">Quick Start</a>
+  <a href="#controls">Controls</a>
+  <a href="#lockkey">Lock/Key</a>
+  <a href="#wifi">WiFi</a>
+  <a href="#bluetooth">Bluetooth</a>
+  <a href="#vpn">VPN</a>
+  <a href="#faq">FAQ</a>
+</nav>
+
+<main>
+
+<section id="overview">
+  <h2>Overview</h2>
+  <p>ScoreControl solves the problem of keeping track of the score while playing. ScoreControl allows mulitple devices running ScoreControl to connect and control the score.</p>
+  <p>All it takes is one device running as Caster and one or more devices running as Remote(s).</p>
+  <p>Perfect for situations where multiple scoreboards all need the ability to control the score.</p>
+  <p>Place an iPad running ScoreControl in convenient locations (under the basket, behind each server, etc).</p>
+  <p>No more mentally keeping track of the score.</p>
+  <p>ScoreControl has a mode where you can only change your score. OwnScore Viewer(s) can connect as well to act as display-only scoreboards. ScoreControl allows you to flexibly connect multiple remote(s) and multiple viewer(s) to control and display the score.</p>
+</section>
+
+<section id="quickstart">
+  <h2>Quick Start</h2>
+<p>To use ScoreControl, you must have at least two devices with ScoreControl installed.<br>
+Start ScoreControl on both devices - a Select Mode dialog window will appear.</p>
+
+<h3>On one device:</h3>
+<div class="step-list">
+  <p>1. Select Caster, push OK.<br>
+  2. Modify Location, Team Names, and Team Colors, as necessary.<br>
+  3. Push 'Start Score Casting'.<br>
+  4. Caster score screen will appear with a Key QR Code.  Swipe up on score to increment.</p>
+</div>
+
+<h3>On the other device:</h3>
+<div class="step-list">
+  <p>5. Select Viewer, push OK.<br>
+  6. Push Scan.<br>
+  7. Scan Key QR code on Caster score screen (tap to enlarge).</p>
+</div>
+
+<h3>On Caster device:</h3>
+<div class="step-list">
+  <p>8. A dialog box will appear asking to grant control to Remote Device.  Push Grant or Deny.</p>
+</div>
+
+<h3>On Viewer device:</h3>
+<div class="step-list">
+  <p>9. A dialog box will appear confirming that control was requested and was granted or denied.  Then a Score Screen will be displayed with game score.</p>
+</div>
+
+<h3>On both devices:</h3>
+<div class="step-list">
+  <p>10. If control was granted, swiping up over a score increments the score on both devices.</p>
+</div>
+</section>
+
+<section id="controls">
+  <h2>Controls</h2>
+<h3>Score Controls</h3>
+<ul>
+  <li>Swipe up on a score: +1</li>
+  <li>Two-finger swipe up: +2</li>
+  <li>Three-finger swipe up: +3</li>
+  <li>Swipe down on a score: -1</li>
+  <li>Two-finger swipe down: -2</li>
+  <li>Three-finger swipe down: -3</li>
+  <li>Horizontal swipe left: Undo</li>
+  <li>Horizontal swipe right: Redo</li>
+</ul>
+
+<h3>Buttons</h3>
+<ul>
+  <li>Save (tap): Save current set, advance to next</li>
+  <li>Save (long press): Mark match as Final</li>
+  <li>Zero (tap): Reset current set to 0-0</li>
+  <li>Zero (long press): Clear all sets</li>
+  <li>Stop: Stop broadcasting</li>
+</ul>
+
+<h3>Swap Area (between scores)</h3>
+<ul>
+  <li>Tap: Local swap (switches sides on this device only)</li>
+  <li>Long press: Global swap (switches sides on all devices)</li>
+</ul>
+
+<h3>QR Code</h3>
+<ul>
+  <li>Tap QR code: Enlarge for easy scanning</li>
+</ul>
+
+<h3>Screen Lock</h3>
+<ul>
+  <li>Long press both scores simultaneously: Toggle screen lock</li>
+  <li>When locked: screen dims after 5 seconds</li>
+  <li>Tap anywhere: Wake screen for 5 seconds</li>
+</ul>
+</section>
+
+<section id="lockkey">
+  <h2>Lock/Key</h2>
+  <p>All game broadcasts are locked and a key is provided through a Key QR Code.</p>
+  <p>A viewer must scan the Key QR Code to find and unlock the game broadcast.</p>
+  <p>Once a viewer has scanned a Key QR Code, it is displayed on its score screen so other viewers can scan it.</p>
+  <p>A lock can be shared amongst casters by copying the Lock QR Code, allowing viewers with key to unlock multiple games using the same lock.</p>
+  <p>A viewer can scan multiple Key QR Codes, allowing them to access multiple groups of games using the same lock.</p>
+</section>
+
+<section id="wifi">
+  <h2>WiFi</h2>
+<p>ScoreControl is designed to work optimally on the local WiFi network. But many public WiFi networks have settings that inhibit ScoreControl from functioning optimally. To get around these network configuration issues, ScoreControl automatically tests the network and chooses one of three WiFi communications modes (W0, W1, W2) that will work within the network settings.</p>
+<p>If none of the three communication modes will work, ScoreControl resorts to using Bluetooth instead of WiFi. If Bluetooth's distance and environmental limitations make ScoreControl unusable, there are several changes that could be done to make WiFi work.</p>
+
+<h3>WiFi Options</h3>
+<p>If Bluetooth does not meet your needs, there are a few things you can try to get WiFi to work:</p>
+<ul>
+  <li>Have the network administrator turn off AP Isolation (sometimes called Client Isolation).</li>
+  <li>If you are on a guest WiFi network, AP Isolation is often turned on by default. Try switching to a non-guest WiFi network.</li>
+  <li>Buy a small, cheap travel router and connect it to the WiFi in bridge or repeater mode, then have all devices connect to the WiFi network of the travel router.</li>
+</ul>
+</section>
+
+<section id="bluetooth">
+  <h2>Bluetooth</h2>
+  <p>If WiFi is not available or its settings make it unusable by ScoreControl, ScoreControl resorts to using Bluetooth. But Bluetooth has distance limitations depending on the environment (how many Bluetooth and WiFi devices are active in your vicinity). Indoors that distance is usually 3-10 meters. Outdoors it is farther.</p>
+  <p>If ScoreControl is using Bluetooth, if the delay value shown in the lower right corner of the Viewer score screen is greater than 5 seconds, there is too much interference from Bluetooth and WiFi devices or the Viewer is just too far away from the Caster and the Viewer needs to move closer to the Caster.</p>
+</section>
+
+<section id="vpn">
+  <h2>VPN</h2>
+  <p>A VPN (Virtual Private Network) on any device can prevent ScoreControl from working over WiFi.</p>
+  <p>VPNs route network traffic through a remote server, which prevents devices on the same WiFi network from communicating directly with each other. This causes the network compatibility test to fail and forces ScoreControl to fall back to Bluetooth.</p>
+  <p>If ScoreControl is not working as expected:</p>
+<ul>
+  <li>Check if a VPN is active on your device (look for a VPN icon in the status bar or check Settings &gt; General &gt; VPN &amp; Device Management).</li>
+  <li>Disable the VPN on all devices running ScoreControl.</li>
+  <li>If you must use a VPN, check if it has a "Allow Local Network Access" or "Split Tunneling" option that lets local network traffic bypass the VPN.</li>
+</ul>
+<p>Note: iCloud Private Relay (in Settings &gt; Apple Account &gt; iCloud) can also interfere. Try disabling it if you experience issues.</p>
+</section>
+
+<section id="faq">
+  <h2>FAQ</h2>
+  <p><strong>Q: I can save invalid set scores (where one score is not 25 or 15, or not win by 2).</strong></p>
+  <p>A: Because rules can change, ScoreControl does not check for valid scores and trusts that the user operating the Caster enters valid scores.</p>
+  <p><strong>Q: Can any score update be undone?</strong></p>
+  <p>A: Yes, even marking a score as Final.</p>
+  <p><strong>Q: Are there some WiFi settings that prevent ScoreControl from operating?</strong></p>
+  <p>A: Yes, WiFi networks are very complex and have settings that could prevent ScoreControl from operating. If network settings cannot be modified, ScoreControl can use Bluetooth instead of WiFi. Depending on your environment (how many Bluetooth and WiFi devices are in close physical proximity), Bluetooth may operate very well, especially outdoors. If ScoreControl cannot use WiFi, give Bluetooth a try, you may be surprised.</p>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 ScoreControl. All rights reserved.</p>
+  <p>Contact: <a href="mailto:support@ownscore.app">support@ownscore.app</a></p>
+</footer>
+
+</body>
+</html>
