@@ -49,6 +49,9 @@ figcaption{font-size:.85rem;color:var(--muted);margin-top:.4rem;text-align:cente
 
 footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.85rem}
 footer a{color:var(--accent);text-decoration:none}
+.store{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+  padding:.6rem 1.1rem;border-radius:8px;font-weight:600;margin:.2rem 0}
+.store:hover{filter:brightness(1.08)}
 footer p{margin-bottom:.4rem}
 
 @media (max-width:480px){
@@ -72,6 +75,8 @@ footer p{margin-bottom:.4rem}
   <a href="#wifi">WiFi</a>
   <a href="#bluetooth">Bluetooth</a>
   <a href="#vpn">VPN</a>
+  <a href="#watch">Watch</a>
+  <a href="#download">Download</a>
   <a href="#faq">FAQ</a>
 </nav>
 
@@ -165,6 +170,26 @@ footer p{margin-bottom:.4rem}
 <p>2. Disable the VPN on all devices running ScoreControl.</p>
 <p>3. If you must use a VPN, check if it has an "Allow Local Network Access" or "Split Tunneling" option that lets local network traffic bypass the VPN.</p>
 <p>Note: iCloud Private Relay (in Settings &gt; Apple Account &gt; iCloud) can also interfere. Try disabling it if you experience issues.</p>
+</section>
+<section id="watch">
+<h2>Watch</h2>
+<p>ScoreControl has an Apple Watch app, also called ScoreControl. Install it from the Watch app on your iPhone: scroll to Available Apps and tap Install.</p>
+<p>The watch is a remote, not a second scoreboard. Every swipe is sent to the phone, the phone applies it exactly as if you had swiped there, and the phone sends the score back. The watch never keeps a score of its own, so the two can never disagree.</p>
+<h3>Scoring</h3>
+<p>Swipe up on a team to add a point, down to take one away. Swipe left anywhere to undo. A Redo button appears for a few seconds after an undo.</p>
+<p>Swipes are deliberately hard to trigger by accident: they must be long enough, fast enough and straight enough, and the edges and the middle of the screen are ignored. A flick that does nothing was rejected on purpose — make it longer and faster.</p>
+<p>Long-press the divider in the middle to swap the sides. That changes only that watch, not the phone or anyone else, and it resets when a new game starts.</p>
+<h3>Which team you can score</h3>
+<p>The watch can change exactly the teams its phone can change. If you hold one team, the other is dimmed with a padlock and swiping it does nothing. A remote that has not been granted a team shows the score and changes nothing.</p>
+<h3>The phone must be awake</h3>
+<p>ScoreControl must be open and on screen on the phone. The watch cannot keep the phone working in the background, and while the phone is in another app the watch will not update and its swipes will not arrive. Bring ScoreControl back to the front and the watch catches up on its own.</p>
+<p>The watch stays on when you lower your wrist, dimmed rather than returning to the clock face. Touches are ignored while it is dimmed so a sleeve cannot score a point.</p>
+<h3>If the watch says it is waiting</h3>
+<p>“Waiting for game” means the phone is connected but no game has started. “Open ScoreControl on your iPhone” means the phone cannot be reached — open the app, and check Bluetooth is on.</p>
+</section>
+<section id="download">
+<h2>Download</h2>
+<p>ScoreControl is a free download from the App Store.</p><p><a class="store" href="https://apps.apple.com/us/app/scorecontrol-remote-scoreboard/id6759013113">Get ScoreControl on the App Store</a></p><p>Everyone at the game needs the app: one person Casts the score and everyone else watches it. In the app this section shows a QR code, so the others can install it by scanning your screen.</p>
 </section>
 <section id="faq">
 <h2>FAQ</h2>
