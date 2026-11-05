@@ -173,20 +173,34 @@ footer p{margin-bottom:.4rem}
 </section>
 <section id="watch">
 <h2>Watch</h2>
-<p>ScoreControl has an Apple Watch app, also called ScoreControl. Install it from the Watch app on your iPhone: scroll to Available Apps and tap Install.</p>
-<p>The watch is a remote, not a second scoreboard. Every swipe is sent to the phone, the phone applies it exactly as if you had swiped there, and the phone sends the score back. The watch never keeps a score of its own, so the two can never disagree.</p>
+<p>ScoreControl has a watch app, also called ScoreControl, on Apple Watch and on Wear OS. It is a remote, not a second scoreboard: every swipe is sent to the phone, the phone applies it exactly as if you had swiped there, and the phone sends the score back. The watch never keeps a score of its own, so the two can never disagree.</p>
+<h3>Installing it</h3>
+<p>On Apple Watch, install it from the Watch app on your iPhone: scroll to Available Apps and tap Install.</p>
+<p>On a Wear OS watch, install it from the Play Store on the watch itself. That is a separate install from the phone app, and installing one does not install the other.</p>
 <h3>Scoring</h3>
-<p>Swipe up on a team to add a point, down to take one away. Swipe left anywhere to undo. A Redo button appears for a few seconds after an undo.</p>
-<p>Swipes are deliberately hard to trigger by accident: they must be long enough, fast enough and straight enough, and the edges and the middle of the screen are ignored. A flick that does nothing was rejected on purpose — make it longer and faster.</p>
+<p>Swipe up on a team to add a point, down to take one away. Swipe left anywhere to undo. A Redo button appears for a few seconds after an undo. On Wear OS, swipe right is left alone, because that is how Wear OS leaves an app.</p>
+<p>Swipes are deliberately hard to trigger by accident: they must be long enough, fast enough and straight enough, and the edges and the middle of the face are ignored. A flick that does nothing was rejected on purpose — make it longer and faster.</p>
+<h3>Swapping sides on Apple Watch</h3>
 <p>Long-press the divider in the middle to swap the sides. That changes only that watch, not the phone or anyone else, and it resets when a new game starts.</p>
+<h3>The menu on Wear OS</h3>
+<p>Long-press the disc at the bottom of the face to open the menu. It offers only what the phone allows, up to four buttons: Zero, Swap, Save and QR. Tap a button for its first meaning and long-press it for its second, the same pairing the phone uses — Zero becomes Zero all, Swap becomes a swap on every device, Save becomes mark Final. Swipe down to close the menu.</p>
+<p>A tapped Swap changes only that watch, not the phone or anyone else, and it resets when a new game starts.</p>
+<p>QR puts the game's Key QR on the watch face, so a remote can scan your wrist instead of the phone. Tap anywhere to put it away. The button appears only when the phone has a code to hand over.</p>
 <h3>Which team you can score</h3>
 <p>The watch can change exactly the teams its phone can change. If you hold one team, the other is dimmed with a padlock and swiping it does nothing. A remote that has not been granted a team shows the score and changes nothing.</p>
 <h3>The phone must be awake</h3>
 <p>ScoreControl must be open and on screen on the phone. The watch cannot keep the phone working in the background, and while the phone is in another app the watch will not update and its swipes will not arrive. Bring ScoreControl back to the front and the watch catches up on its own.</p>
-<p>The watch stays on when you lower your wrist, dimmed rather than returning to the clock face. Touches are ignored while it is dimmed so a sleeve cannot score a point.</p>
+<h3>Keeping the score on the face</h3>
+<p>On either watch the scoreboard stays up when you lower your wrist, dimmed rather than handed back to the clock face, and touches are ignored while it is dimmed so a sleeve cannot score a point. What keeps it there differs by platform.</p>
+<h3>Apple Watch</h3>
+<p>The dimmed scoreboard is the watch's Always On display, which is a watch setting and not something an app can switch on: Settings › Display &amp; Brightness › Always On. It is on by default, but Low Power Mode and Theater Mode each suspend it, and Series 4 and the first two SE models never had it at all. Without it the screen turns off when your wrist drops.</p>
 <p>watchOS still goes back to the clock face after its own idle timeout, and no app can switch that off. The watch decides how long and what it comes back to: Settings › General › Return to Clock. Set the delay to After 1 hour, then scroll down to ScoreControl and turn on Return to App, and raising your wrist brings back the score instead of the clock face.</p>
+<p>Worth setting before a game: Settings › Display &amp; Brightness › Wake Duration › Wake for 70 Seconds. A tap then holds the score at full brightness for over a minute instead of fifteen seconds.</p>
+<h3>Wear OS</h3>
+<p>Wear OS used to take the screen back about thirty seconds after your wrist dropped. The watch app now tells the watch that a game is in progress, and the watch leaves it in front until the game ends. There is nothing to set for that — but there is one thing to allow.</p>
+<p>The first time the watch app runs it asks to post notifications. Say yes. The notice it posts is how the watch knows a game is running, and refusing it brings back the old behaviour: the watch face takes over mid-game. Nothing else about the app changes, so there is no warning that this is what happened. If it was already refused, turn it back on on the watch itself: Settings › Apps › ScoreControl › Permissions › Notifications.</p>
 <h3>If the watch says it is waiting</h3>
-<p>“Waiting for game” means the phone is connected but no game has started. “Open ScoreControl on your iPhone” means the phone cannot be reached — open the app, and check Bluetooth is on.</p>
+<p>On Apple Watch, “Waiting for game” means the phone is connected but no game has started; on Wear OS the same state reads “Waiting for ScoreControl on phone”. “Open ScoreControl on your phone” means the phone cannot be reached — open the app, and check Bluetooth is on.</p>
 </section>
 <section id="download">
 <h2>Download</h2>
@@ -213,6 +227,8 @@ footer p{margin-bottom:.4rem}
      <a href="https://play.google.com/store/apps/details?id=com.scorebt.control">Google Play</a> &middot;
      <a href="mailto:support@scorecontrol.app">support@scorecontrol.app</a> &middot;
      <a href="https://scorecontrol.app">scorecontrol.app</a></p>
+  <p><a href="https://doc-hosting.flycricket.io/scorecontrol-terms-of-use/2c92508f-b084-4310-a83e-e1d371c4207a/terms">Terms of Use</a> &middot;
+     <a href="https://doc-hosting.flycricket.io/scorecontrol-privacy-policy/ab2bca2f-9880-4337-a0cf-22629ebc0884/privacy">Privacy Policy</a></p>
 </footer>
 
 <script>
